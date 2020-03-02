@@ -21,34 +21,34 @@
 
 <?php
 
-if(isset($_POST['operator'])){
+if(isset($_POST['operator'])) {
 
     $operator = $_POST['operator'];
     $eerste = $_POST['eerste'];
     $tweede = $_POST['tweede'];
     
     switch ($operator) {
-        case "add": 
-            $total = $eerste + $tweede;
+    case "add": 
+        $total = $eerste + $tweede;
         break;
         
-        case "subtract":
-            $total = $eerste - $tweede;
+    case "subtract":
+        $total = $eerste - $tweede;
         break;
         
-        case "multiply":
-            $total = $eerste * $tweede;
+    case "multiply":
+        $total = $eerste * $tweede;
         break;
         
-        case "divide":
-            $total = $eerste / $tweede;
+    case "divide":
+        $total = $eerste / $tweede;
         break;
         
-        case "modulo":
-            $total = $eerste % $tweede;
+    case "modulo":
+        $total = $eerste % $tweede;
         break;
     }
-    if(isset($total)){
+    if(isset($total)) {
         echo $total;
     }
 }
